@@ -35,6 +35,12 @@ end
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+
+gem 'sqlite3', :group => [:development, :test]
+group :production do
+gem 'thin'
+gem 'pg'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
